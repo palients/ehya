@@ -1,0 +1,68 @@
+.about-book
+  display: flex
+  justify-content: space-between
+  &__left
+    width: 585px
+    padding-top: 45px
+  &__right
+    &--background
+      background-color: $background-book
+      padding: 103px 119px
+  &__image
+    background: rgba(0, 0, 0, 0.0001)
+    box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.08)
+  &__title
+    max-width: 443px
+    margin: 0
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+    &--first
+      color: $orange-title
+    &--second
+      padding-bottom: 28px
+  &__author
+    margin: 0
+    margin-bottom: 36px
+    font-style: normal
+    font-weight: 500
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 0.2px
+    text-transform: uppercase
+  &__description
+    margin: 0
+    margin-bottom: 56px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 32px
+    color: $text-grey
+  &__button
+    text-transform: uppercase
+    height: 58px
+    &--buy-now
+      margin-top: 1px
+      padding-left: 36px
+      padding-right: 38px
+      margin-right: 22px
+      background-color: $primary-button
+      border: none
+      color: $text-light
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+    &--demo
+      margin-top: -1px
+      padding-left: 50px
+      padding-right: 48px
+      border: 2px solid $primary-button
+      background: none
+      color: $primary-button
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
