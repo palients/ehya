@@ -1,0 +1,83 @@
+.category
+    padding-top: 121px
+    padding-bottom: 100px
+.shape
+    &__card
+        width: 265px
+        height: 240px
+        border: 1px solid #ECEEF2
+        box-sizing: border-box
+        border-radius: 8px
+        padding: 40px 0 0 0
+    &__image
+        margin: auto
+    &__title
+        font-family: Roboto
+        font-style: normal
+        font-weight: 500
+        font-size: 22px
+        line-height: 32px
+        text-align: center
+        letter-spacing: 0.2px
+        margin-top: 40px
+        margin-bottom: 12px
+        color: $text-color
+    &__info
+        font-weight: normal
+        font-size: 16px
+        line-height: 22px
+        text-align: center
+        color: $info-text
+.slider
+    &-one
+        .slick
+            &-arrow
+                position: absolute
+                z-index: 10
+                width: 56px
+                padding: 40px
+                font-size: 0px
+                border: none
+            &-prev
+                background: url(../img/prev-category.svg)
+                cursor: pointer
+                background-repeat: no-repeat
+                background-color: transparent
+                left: 0%
+                transform: translate(-54%, 112%)
+            &-next
+                background: url(../img/next-category.svg)
+                cursor: pointer
+                background-repeat: no-repeat
+                background-color: transparent
+                left: 94%
+                transform: translate(0, -189%)
+            &-disabled
+                opacity: 0.00
+.slider
+    &-three
+        display: none
+        .slick
+            &-arrow
+                position: absolute
+                z-index: 10
+                width: 56px
+                padding: 40px
+                font-size: 0px
+                border: none
+            &-prev
+                background: url(../img/prev-category.svg)
+                cursor: pointer
+                background-repeat: no-repeat
+                background-color: transparent
+                left: -4%
+                top: 100%
+            &-next
+                background: url(../img/next-category.svg)
+                cursor: pointer
+                background-repeat: no-repeat
+                background-color: transparent
+                left: 82%
+
+            &-disabled
+                opacity: 0.25

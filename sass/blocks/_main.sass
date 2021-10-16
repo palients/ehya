@@ -1,0 +1,88 @@
+.main
+    padding-top: 58px
+    padding-bottom: 40px
+    &-grid
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &-image
+        padding: 103px 119px
+        background: #f7f8f9
+    &-info
+        &__title
+            font-family: Roboto Condensed
+            font-style: normal
+            font-weight: bold
+            font-size: 48px
+            line-height: 60px
+            letter-spacing: 0.2px
+            color: #FAAD13
+            margin-bottom: 0
+            margin-top: 0
+            &--2
+                color: inherit
+                margin-top: 0
+                margin-bottom: 30px
+        &__author
+            font-family: Roboto
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
+            letter-spacing: 0.2px
+            margin-bottom: 36px
+            display: inline-block
+        &__subtitle
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 32px
+            color: $info-text
+            margin-bottom: 56px
+            display: inline-block
+            max-width: 585px
+            max-height: 162px
+            overflow: auto
+        &__button
+            margin-bottom: 16px
+    &__button
+        &-one
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 22px
+            text-align: center
+            color: $primary
+            padding: 18px 37px
+            border-radius: 8px
+            background: $color-button
+            border: 0
+            margin-right: 21px
+            &:hover
+                background: #7560e99c
+            &:active
+                background: #5134f7e5
+        &-two
+            padding: 16px 49px
+            text-decoration: none
+            border: 2px solid $color-button
+            box-sizing: border-box
+            border-radius: 8px
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 25px
+            text-align: center
+            color: $color-button
+            &:hover
+                color: #7560e99c
+            &:active
+                color: #5134f7e5
+
+.image
+    &-book
+        width: 250px
+        max-width: none
+        z-index: 10
+        background: rgba(0, 0, 0, 0.0001)
+        box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.08)
