@@ -44,11 +44,14 @@
     &__image
         margin-right: 20px
     &__book
+        object-fit: cover
+        object-position: top center
         width: 160px
         height: 238px
         border-radius: 8px
         &--abstract
             object-fit: cover
+            object-position: center center
     &-info
         width: 152px
         display: flex
@@ -146,6 +149,8 @@
             color: $color-button
             margin-bottom: 22px
             display: inline-block
+            &--top-month
+                margin-bottom: 21px
         &__pay
             font-style: normal
             font-weight: bold
@@ -159,6 +164,9 @@
             padding: 7px 20px
             width: 62%
             cursor: pointer
+            &--top-month
+                margin-left: 1px
+                width: 61%
             &:hover
                 background: #7560e99c
     &__book
