@@ -1,3 +1,101 @@
 .other-books
   display: flex
   justify-content: space-between
+  &__main-title
+    text-align: left
+    margin: 0px 0px 30px 0px
+    font-style: normal
+    font-weight: bold
+    font-size: 32px
+    line-height: 40px
+    letter-spacing: 0.2px
+  &__first-block
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    width: 751px
+  &__second-block
+    width: 360px
+    background-color: $background-book
+    border-radius: 8px
+  &__card
+    padding: 10px 26px 11px 10px
+    margin-bottom: 29px
+    display: flex
+    border-radius: 8px
+    border: 1px solid $border-card
+  &__image-book
+    width: 160px
+    height: 238px
+    margin-right: 20px
+    border-radius: 8px
+  &__title
+    margin: 0
+    margin-top: 14px
+    margin-bottom: 15px
+    max-width: 155px
+    color: $primary-text
+    font-family: Roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
+    letter-spacing: 0.2px
+    &--educated
+      width: 120px
+    &--top-month
+      margin-top: 10px
+      margin-bottom: 14px
+  &__genre
+    margin-bottom: 23px
+    color: $primary-text
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+  &__price
+    margin-bottom: 25px
+    color: $primary-button
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 0.2px
+    &--top-month
+      margin-bottom: 22px
+  &__buttons
+    display: flex
+    justify-content: space-between
+    min-width: 150px
+  &__buy
+    background: $primary-text
+    color: $text-light
+    border: none
+    border-radius: 2000px
+    padding: 7px 21px 7px 20px
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    &--mb-1
+      margin-left: -3px
+    &--mb-2
+      margin-left: -1px
+    &--top-month
+      margin-left: 1px
+      padding-right: 20px
+  &__favorites
+    cursor: pointer
+    margin-top: 7px
+  &__list-card
+    display: flex
+    padding: 0px 24px 33px 24px
+    &--first
+      padding-top: 24px
+  &__image-top-month
+    margin-right: 26.67px
+    width: 119.33px
+    height: 177.5px
+    border-radius: 5.96628px
