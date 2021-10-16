@@ -34,7 +34,7 @@
         display: flex
         flex-wrap: wrap
         gap: 32px
-        margin-bottom: 27px
+        margin-bottom: 29px
 .card
     display: flex
     align-items: center
@@ -47,6 +47,8 @@
         width: 160px
         height: 238px
         border-radius: 8px
+        &--abstract
+            object-fit: cover
     &-info
         width: 152px
         display: flex
@@ -60,6 +62,10 @@
             letter-spacing: 0.2px
             margin: 0
             margin-bottom: 16px
+            &--abstract
+                margin-top: -4px
+            &--memoir
+                margin-top: -2px
         &__about
             font-style: normal
             font-weight: normal
@@ -67,6 +73,8 @@
             line-height: 22px
             margin-bottom: 24px
             display: inline-block
+            &--memoir
+                margin-bottom: 21px
         &__price
             font-family: Roboto Condensed
             font-style: normal
@@ -77,6 +85,8 @@
             color: $color-button
             margin-bottom: 24px
             display: inline-block
+            &--abstract
+                margin-bottom: 20px
         &__button
             display: flex
             align-items: center
@@ -93,12 +103,20 @@
             padding: 7px 20px
             margin-right: 22px
             cursor: pointer
+            &--abstract
+                padding: 7px 21px 7px 20px
+                margin-top: 2px
+                margin-right: 24px
+                margin-left: -3px
             &:hover
                 background: #7560e99c
         &__love
+            margin-top: 4px
             width: 19px
             height: 17px
             cursor: pointer
+            &--abstract
+                margin-top: 8px
 .month
     display: flex
     align-items: center
@@ -167,7 +185,6 @@
             margin-bottom: 2px
             color: $color-button
             text-decoration: none
-
     &__title
         font-family: Roboto Condensed
         font-style: normal
