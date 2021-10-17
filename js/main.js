@@ -10,7 +10,7 @@ $(document).ready(function () {
     player = new YT.Player('player', {
       height: '100%',
       width: '100%',
-      videoId: 'Ks8W7iCAYRI',
+      videoId: 'vkHJ0NG70lk',
         events: {
           'onReady': videoPlay,
         }
@@ -26,7 +26,7 @@ $(document).ready(function () {
     player = new YT.Player('player-1', {
       height: '100%',
       width: '100%',
-      videoId: 'Ks8W7iCAYRI',
+      videoId: 'vkHJ0NG70lk',
         events: {
           'onReady': videoPlay,
         }
@@ -42,7 +42,7 @@ $(document).ready(function () {
     player = new YT.Player('player-2', {
       height: '100%',
       width: '100%',
-      videoId: 'Ks8W7iCAYRI',
+      videoId: 'vkHJ0NG70lk',
         events: {
           'onReady': videoPlay,
         }
@@ -58,7 +58,7 @@ $(document).ready(function () {
     player = new YT.Player('player-3', {
       height: '100%',
       width: '100%',
-      videoId: 'Ks8W7iCAYRI',
+      videoId: 'vkHJ0NG70lk',
         events: {
           'onReady': videoPlay,
         }
