@@ -44,14 +44,14 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'mmotya.mmotya@mail.ru'; // Логин на почте
-    $mail->Password   = 'FWBDgjRwffSZR3Zjp6BQ'; // Пароль на почте
+    $mail->Username   = 'c.morozov@coffeestudio.ru'; // Логин на почте
+    $mail->Password   = '2021Constantin2021'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('mmotya.mmotya@mail.ru', 'Moтя Виноградова'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('c.morozov@coffeestudio.ru', 'Constantin Morozov'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('kevdina@yandex.ru');  
+    $mail->addAddress('palients@yandex.ru');  
 
 // Отправка сообщения
 $mail->isHTML(true);
