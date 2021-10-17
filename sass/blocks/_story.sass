@@ -26,7 +26,6 @@
             color: $info-text
             max-width: 382px
             margin-right: 37px
-            max-height: 130px
             overflow: auto
     &-author
         display: flex
@@ -47,7 +46,7 @@
         margin-left: 2px
         margin-right: 2px
         display: flex
-        align-items: center
+        align-items: stretch
         justify-content: space-between
 .history
     &__icon
@@ -72,9 +71,9 @@
             background-image: url(../img/history-3.jpg)
         &--bg-3
             background-image: url(../img/history-2.jpg)
-
     &__note
         margin-top: 12px
+        cursor: pointer
         &--none
             display: none
     &__title
@@ -87,8 +86,12 @@
         margin-top: 25px
         margin-bottom: 9px
     &__text
+        display: block
+        max-width: 315px
         font-style: normal
         font-weight: normal
         font-size: 16px
         line-height: 22px
         color: $info-text
+.iconNoteInactive
+    filter: invert(26%) sepia(72%) saturate(6113%) hue-rotate(352deg) brightness(94%) contrast(131%)

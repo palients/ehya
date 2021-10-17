@@ -241,6 +241,19 @@ $(document).ready(function () {
 
      });
  });
+   
+ $(document).ready(function(){
+   $( ".history__note" ).click(function() {
+     if($(this).hasClass('iconNoteActive')) {
+       $( this ).removeClass( "iconNoteActive");
+       $( this ).addClass( "iconNoteInactive");
+        } else {
+            $( this ).removeClass( "iconNoteInactive" );
+            $( this ).addClass( "iconNoteActive" );
+        }
+
+     });
+ });
  $(document).ready(function(){
    $("#menu").on("click", "a", function (event) {
      event.preventDefault();
