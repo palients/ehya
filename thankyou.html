@@ -1,198 +1,267 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ehya - Thank You!</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-    <header class="navbar navbar--mobile_fixed">
-        <div class="container">
-            <div class="navbar-top">
-                <a href="index.html" class="logo">
-                    <img src="img/Logo.svg" alt="Logo: Ehya" class="logo__image" />
-                </a>
-                <div class="navbar-bottom">
-                    <ul class="navbar-menu">
-                        <li class="navbar-menu__item">
-                            <a href="#" class="navbar-menu__link">Рекомендации</a>
-                        </li>
-                        <li class="navbar-menu__item">
-                            <a href="#" class="navbar-menu__link">Книги</a>
-                        </li>
-                        <li class="navbar-menu__item">
-                            <a href="#" class="navbar-menu__link">Блог</a>
-                        </li>
-                        <li data-toggle="modal" class="navbar-menu__item navbar-menu__item_mobile_visible"><a href="#"
-                                data-toggle="modal"
-                                class="button navbar__button navbar__button_mobile_visible">Получить</a></li>
-                    </ul>
-                </div>
-                <a href="#" data-toggle="modal" class="button navbar__button navbar__button_mobile_hidden">Получить</a>
-                <button class="menu-button navbar-top__menu-button">
-                    <span class="menu-button__line"></span>
-                    <span class="menu-button__line"></span>
-                    <span class="menu-button__line"></span>
-                </button>
-                <!-- /.menu -->
-            </div>
-            <!-- /.navbar-top -->
-        </div>
-        <!-- /.container -->
-    </header>
-    <section class="thank">
-        <div class="container">
-            <div class="thank-list">
-                <h2 class="thank-list__title">Ваша заявка успешно отправлена!
-                </h2>
-                <p class="thank-list__text">Большое спасибо за вашу подписку. Теперь вы всегда будете знать все свамые
-                    свежие новости.</p>
-                <a href="index.html" class="button thank-list__button">Главная</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- /.newsletter -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-wrapper">
-                <div class="footer__social-network">
-                    <a href="index.html" class=footer__logo> <img src="img/logo-footer.svg" alt="Logo"> </a>
-                    <span class="footer__text">Создайте современный и креативный веб-сайт с crealand</span>
-                    <div class="footer__social-link">
-                        <a target="blank" href="https://www.google.ru/" class="footer__link"> <img
-                                src="img/google-icon.svg" alt="Icon: google"> </a>
-                        <a target="blank" href="https://twitter.com/" class="footer__link"> <img
-                                src="img/twitter-icon.svg" alt="Icon:twitter"> </a>
-                        <a target="blank" href="https://www.instagram.com/" class="footer__link"> <img
-                                src="img/inst-icon.svg" alt="Icon:inst"> </a>
-                        <a target="blank" href="https://linkedin.com/" class="footer__link"> <img src="img/in-icon.svg"
-                                alt="Icon:in"> </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ehya - Книга Мишеля Янга</title>
+        <link
+            rel="shortcut icon"
+            href="img/favicon.ico"
+            type="image/x-icon"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__block">
+                    <a href="./index.html" class="header__link">
+                        <img
+                            src="img/Logo.svg"
+                            alt="Icon: Logo"
+                            class="logo"
+                        />
+                    </a>
+                    <div class="header__block-info">
+                        <a href="#" class="header__block-info__text"
+                            >Рекомендации</a
+                        ><a href="#" class="header__block-info__text">Книги</a
+                        ><a href="#" class="header__block-info__text">Блог</a>
+                        <button
+                            data-toggle="modal"
+                            class="header__block-info__button"
+                        >
+                            Получить
+                        </button>
                     </div>
-                    <!-- /.footer__social-link -->
-                </div>
-                <!-- /.footer__social-network -->
-                <div class="footer__list footer__product">
-                    <h3 class="footer__title">Продукт</h3>
-                    <ul class="footer__ul">
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Лэндинг</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Функции</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Документация</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Скидки</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Расценки</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.footer__list footer__product -->
-                <div class="footer__list footer__services">
-                    <h3 class="footer__title">Сервисы</h3>
-                    <ul class="footer__ul">
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Документация</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Дизайн</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Темы</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Илюстрации</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">UI Kit</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__list footer__company">
-                    <h3 class="footer__title">Компания</h3>
-                    <ul class="footer__ul">
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">О нас</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Условия</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Privacy Policy</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Careers</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__list footer__more">
-                    <h3 class="footer__title">Еще...</h3>
-                    <ul class="footer__ul">
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Документация</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Лицензия</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Изменения</a>
-                    </ul>
+                    <div class="plate">
+                        <svg
+                            class="plate__burger"
+                            version="1.1"
+                            height="100"
+                            width="100"
+                            viewBox="0 0 100 100"
+                        >
+                            <path
+                                class="plate__burger-line plate__burger-line1"
+                                d="M 30,65 H 70"
+                            />
+                            <path
+                                class="plate__burger-line plate__burger-line2"
+                                d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695"
+                            />
+                            <path
+                                class="plate__burger-line plate__burger-line3"
+                                d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695"
+                            />
+                        </svg>
+                        <svg
+                            class="plate__x"
+                            version="1.1"
+                            height="100"
+                            width="100"
+                            viewBox="0 0 100 100"
+                        >
+                            <path class="plate__x-line" d="M 34,32 L 66,68" />
+                            <path class="plate__x-line" d="M 66,32 L 34,68" />
+                        </svg>
+                    </div>
                 </div>
             </div>
-            <!-- /.footer-wrapper -->
-            <div class="footer-bottom">
-                <img src="img/heart-footer.svg" alt="Icon:love">
-                <span class="footer__copyright">
-                    Copyright © 2019. Crafted with love.
-                </span>
-
+            <div class="header__mobile">
+                <nav class="header__menu">
+                    <a
+                        href=""
+                        class="header__menu-item header__block-info__text"
+                        >Рекомендации</a
+                    >
+                    <a
+                        href=""
+                        class="header__menu-item header__block-info__text"
+                        >Книги</a
+                    >
+                    <a
+                        href=""
+                        class="header__menu-item header__block-info__text"
+                        >Блог</a
+                    >
+                    <button
+                        data-toggle="modal"
+                        class="header__block-info__button"
+                    >
+                        Получить
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <section class="join-us">
+            <div class="container">
+                <div class="join-us-wrapper">
+                    <h2 class="join-us__text">
+                        Спасибо за заявку! Наши менеджеры свяжутся с Вами в
+                        течение 5 минут.
+                    </h2>
+                    <a href="./index.html" class="join-us-btn">Назад</a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="footer__block footer__block-width">
+                        <a href="./index.html" class="footer__link">
+                            <img
+                                src="img/Logo.svg"
+                                alt="Icon: Logo"
+                                class="footer__logo"
+                            />
+                        </a>
+                        <span class="footer__desc">
+                            Создайте современный и <br />
+                            креативный веб-сайт с crealand
+                        </span>
+                        <div class="footer__link">
+                            <a
+                                target="_blank"
+                                href="https://www.google.ru"
+                                class="footer__link-image"
+                            >
+                                <img
+                                    src="img/link-google.svg"
+                                    alt="Icon: google"
+                                    class="footer__link-icon"
+                                />
+                            </a>
+                            <a
+                                target="_blank"
+                                href="https://twitter.com/"
+                                class="footer__link-image"
+                                ><img
+                                    src="img/link-twitter.svg"
+                                    alt="Icon: twitter"
+                                    class="footer__link-icon" /></a
+                            ><a
+                                target="_blank"
+                                href="https://www.instagram.com/"
+                                class="footer__link-image"
+                                ><img
+                                    src="img/link-instagram.svg"
+                                    alt="Icon: instagram"
+                                    class="footer__link-icon" /></a
+                            ><a
+                                target="_blank"
+                                href="https://linkedin.com/"
+                                class="footer__link-image"
+                                ><img
+                                    src="img/link-link.svg"
+                                    alt="Icon: Linkedin"
+                                    class="footer__link-icon"
+                            /></a>
+                        </div>
+                    </div>
+                    <div class="footer__block">
+                        <div class="footer__title">Продукт</div>
+                        <a href="#" class="footer__text">Лэндинг</a
+                        ><a href="#" class="footer__text">Функции</a
+                        ><a href="#" class="footer__text">Документация</a
+                        ><a href="#" class="footer__text">Скидки</a
+                        ><a href="#" class="footer__text">Расценки</a>
+                    </div>
+                    <div class="footer__block">
+                        <div class="footer__title">Сервисы</div>
+                        <a href="#" class="footer__text">Документация</a
+                        ><a href="#" class="footer__text">Дизайн</a
+                        ><a href="#" class="footer__text">Темы</a
+                        ><a href="#" class="footer__text">Илюстрации</a
+                        ><a href="#" class="footer__text">UI Kit</a>
+                    </div>
+                    <div class="footer__block">
+                        <div class="footer__title">Компания</div>
+                        <a href="#" class="footer__text">О нас</a
+                        ><a href="#" class="footer__text">Условия</a
+                        ><a href="#" class="footer__text">Privacy Policy</a
+                        ><a href="#" class="footer__text">Careers</a>
+                    </div>
+                    <div class="footer__block">
+                        <div class="footer__title">Еще..</div>
+                        <a href="#" class="footer__text">Документация</a
+                        ><a href="#" class="footer__text">Лицензия</a
+                        ><a href="#" class="footer__text">Изменения</a>
+                    </div>
+                    <div class="footer__bottom footer__flex">
+                        <img
+                            src="img/footer-bottom.svg"
+                            alt="Icon: Heart"
+                            class="footer__bottom-image"
+                        />
+                        <span class="footer__bottom-info"
+                            >Copyright © 2019. Crafted with love.</span
+                        >
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__dialog">
+                <a class="modal__close">
+                    <img src="img/close.png" alt="Icon: Close" />
+                </a>
+                <h3 class="modal__title">Получить</h3>
+                <form action="send.php" method="POST" class="modal__form form">
+                    <div class="modal__block-input">
+                        <input
+                            type="text"
+                            name="name"
+                            class="input modal__input"
+                            placeholder="Ваше полное имя*"
+                            required
+                            minlength="2"
+                        />
+                    </div>
+                    <div class="modal__block-input">
+                        <input
+                            type="tel"
+                            name="phone"
+                            class="input modal__input"
+                            placeholder="Номер телефона*"
+                            required
+                            minlength="10"
+                            maxlength="16"
+                        />
+                    </div>
+                    <div class="modal__block-input">
+                        <input
+                            type="email"
+                            name="email"
+                            class="input modal__input"
+                            placeholder="Электронная почта*"
+                            required
+                        />
+                    </div>
+                    <textarea
+                        name="message"
+                        class="message modal__message"
+                        placeholder="Комментарий"
+                    ></textarea>
+                    <div class="modal__form-block">
+                        <button type="submit" class="button modal__button">
+                            Отправить
+                        </button>
+                        <span class="modal__info">*Обязательные поля</span>
+                    </div>
+                </form>
             </div>
         </div>
-        <!-- /.container -->
-    </footer>
-    <!-- /.footer -->
-    <div class="modal">
-        <div class="modal__overlay"></div>
-        <!-- /.modal__overlay -->
-        <div class="modal__dialog">
-            <a href="#" class="modal__close">
-                <img src="img/close.svg" alt="icon:close">
-            </a>
-            <h3 class="modal__title">Заполните форму</h3>
-            <form action="send.php" method="POST" class="modal__form form">
-                <input type="text" class="input modal__input" placeholder="Ваше имя*" name="name" required
-                    minlength="2" />
-                <input type="tel" class="input modal__input modal__input--phone " placeholder="Номер телефона*"
-                    name="phone" required minlength="18" />
-                <input type="email" class="input modal__input" placeholder="Почта*" name="email" required />
-                <button class="button modal__button" type="submit" value="thankyou" name="form">Отправить</button>
-            </form>
-        </div>
-        <!-- /.modal__dialog -->
-    </div>
-    <a id="toTop" href="#" class="upstairs">
-        <img src="img/return.svg" alt="Наверх">
-    </a>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/slick.min.js"></script>
+    </body>
 </html>
