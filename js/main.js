@@ -1,4 +1,56 @@
 $(document).ready(function () {
+  const prevArrow = $(".slider__button-prev");
+    const nextArrow = $(".slider__button-next");
+
+    $(".carousel").slick({
+      slidesToShow: 4,
+      infinite: false,
+      slidesToScroll: 1,
+      autoplaySpeed: 2000,
+      adaptiveHeight: true,
+      prevArrow: prevArrow,
+      nextArrow: nextArrow,
+      asNavFor: ".slide-adaptive",
+      responsive: [
+          {
+              breakpoint: 1024,
+              settings: {
+                  slidesToShow: 3,
+              },
+          },
+          {
+              breakpoint: 800,
+              settings: {
+                  slidesToShow: 2,
+              },
+          },
+      ],
+  });
+  $(".slide-adaptive").slick({
+      slidesToShow: 4,
+      infinite: false,
+      slidesToScroll: 1,
+      autoplaySpeed: 2000,
+      arrows: false,
+      asNavFor: ".carousel",
+      adaptiveHeight: true,
+      responsive: [
+          {
+              breakpoint: 1024,
+              settings: {
+                  slidesToShow: 3,
+              },
+          },
+          {
+              breakpoint: 800,
+              settings: {
+                  slidesToShow: 2,
+              },
+          },
+      ],
+  });
+
+  
     var menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener("click", function() {
     document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");

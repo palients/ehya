@@ -28,6 +28,20 @@
                 height: 100%
                 object-fit: cover
                 border-radius: 8px
+    .slide
+        &__card
+            max-width: 234px
+        &__image
+            width: 42px
+            height: 42px
+            margin-bottom: 25px
+        &__title
+            font-size: 20px
+            line-height: 22px
+            margin-bottom: 10px
+        &__description
+            font-size: 16px
+            line-height: 24px
     .story
         &-author
             width: 100%
@@ -60,7 +74,30 @@
             .slick
                 &-list
                     margin-left: 50px
-
+    .slider
+        &__button
+        &-prev,&-next
+            width: 48px
+            height: 48px
+        &-prev
+            left: -24px
+        &-next
+            right: -24px
+@media (min-width: 992px)
+    .slider,.unpublished
+        &__button
+            &-prev,&-next
+                transition: 0.3s
+                &:hover
+                    transform: scale(1.1)
+@media (min-width: 768px)
+    .plate
+        display: none
+    .slide
+        &-adaptive
+            display: none
+    .slide
+        margin-bottom: 100px
 @media ( max-width: 992px)
     button:hover
         background-color: #fff
@@ -348,6 +385,33 @@
             width: 94%
     body
         padding-top: 30px
+    .slider
+        &__button
+            &-prev,&-next
+                bottom: -76px
+            &-prev
+                left: 35%
+            &-next
+                right: 35%
+    .slide
+        &__card
+            max-width: 140px
+            width: 100%
+            height: 182px
+        &__image
+            width: 36px
+            height: 36px
+            margin: 20px 0
+        &__title
+            font-size: 16px
+            text-align: center
+        &__description
+            font-size: 12px
+            text-align: center
+            max-width: 99px
+    .slide
+        border-top: none
+        padding-top: 10px
     .navbar
         background-color: #fff
         &--mobile
@@ -696,7 +760,20 @@
             min-width: 400px
         &__title
             font-size: 15px
-
+@media (max-width: 645px)
+    .slide
+        .slick 
+            &-list 
+                margin-right: -20px
+    .slider
+        &__container
+            max-width: 300px
+            padding: 0 !important
+        &__button
+            &-prev
+                left: 25%
+            &-next
+                right: 25%
 @media (max-width: 576px)
     .container
         max-width: 480px
@@ -705,6 +782,37 @@
     .partners
         &-list
             gap: 20px 30px
+    .slider
+        &__button
+            &-next, &-prev
+                bottom: -86px
+            &-next
+                right: 32%
+            &-prev
+                left: 33%
+    .slide
+        &-adaptive
+            margin-top: -21px 
+            margin-bottom: 143px
+        &__title
+            font-family: Roboto Condensed
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 20px
+            max-width: 105px
+            text-align: center
+            margin-top: -9px
+            margin-right: -12px
+        &__description
+            font-size: 12px
+            line-height: 20px
+            margin-left: 11px
+            &-ml
+                margin-top: 20px
+        &__image
+            margin: 25px 0px
+            margin-left: 8px
     .slider
         &-two
             .slick
